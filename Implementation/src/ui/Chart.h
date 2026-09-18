@@ -290,10 +290,10 @@ public:
         for (auto& s : series)
         {
             if (s.label.length() == 0) continue;
-            gui::Size sz;
-            gui::DrawableString::measure(s.label, sz, gui::Font::ID::SystemSmaller);
-            w = (std::max)(w, sz.width);
-            // natID text measurement can under-report widths (and does during PDF/SVG export)
+            // Width is estimated from the label length instead of measured:
+            // gui::DrawableString::measure with Font::ID::SystemSmaller throws an
+            // Objective-C exception on macOS (nil font), and on other platforms it
+            // under-reports widths during PDF/SVG export.
             w = (std::max)(w, 6.5 * (double) s.label.length());
             ++n;
         }

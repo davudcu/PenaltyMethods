@@ -38,3 +38,6 @@ __pycache__/
 
 # Source archives of this repository
 *.zip
+
+# Personal defense notes, not part of the submission
+DEFENSE.html
