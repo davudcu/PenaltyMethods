@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DevRes>
+    <Translations>
+        <Res id="appTitle" tr="Penalty Methods: Quadratic Penalty vs Augmented Lagrangian"/>
+        <Res id="ready" tr="Ready"/>
+        <Res id="noResult" tr="Choose a problem on the right and press Run comparison (Ctrl+R)."/>
+        <Res id="noIterations" tr="No iterations recorded"/>
+
+        <!-- navigation and pages -->
+        <Res id="navSummary" tr="Summary"/>
+        <Res id="navLandscape" tr="Landscape"/>
+        <Res id="navConvergence" tr="Convergence"/>
+        <Res id="navConditioning" tr="Conditioning"/>
+        <Res id="navData" tr="Data"/>
+        <Res id="pgSummary" tr="Summary"/>
+        <Res id="pgSummarySub" tr="Key findings and a side-by-side scorecard of both methods."/>
+        <Res id="pgLandscape" tr="Penalty landscape"/>
+        <Res id="pgLandscapeSub" tr="Merit function of subproblem k, Newton paths and constraint violation."/>
+        <Res id="pgConvergence" tr="Convergence"/>
+        <Res id="pgConvergenceSub" tr="Feasibility per subproblem and accuracy per unit of work."/>
+        <Res id="pgConditioning" tr="Ill-conditioning analysis"/>
+        <Res id="pgConditioningSub" tr="Hessian condition number against the penalty parameter, and its effect on Newton."/>
+        <Res id="pgData" tr="Data"/>
+        <Res id="pgDataSub" tr="Every number behind the charts."/>
+        <Res id="violationTitleShort" tr="Constraint violation per outer iteration"/>
+
+        <!-- menus -->
+        <Res id="menuApp" tr="App"/>
+        <Res id="menuExperiment" tr="Experiment"/>
+        <Res id="menuView" tr="View"/>
+        <Res id="menuExport" tr="Export"/>
+        <Res id="menuHelp" tr="Help"/>
+        <Res id="quit" tr="Quit"/>
+        <Res id="exportAll" tr="Export all"/>
+        <Res id="exportAllTT" tr="Every chart page (PDF) and all data (CSV) into a new dated folder (Ctrl+E)"/>
+        <Res id="exportPdf" tr="Current page as PDF"/>
+        <Res id="exportSvg" tr="Current page as SVG"/>
+        <Res id="exportCsv" tr="Data as CSV"/>
+        <Res id="openExports" tr="Open exports folder"/>
+        <Res id="openExportsTT" tr="Open the folder of the latest export in the file manager"/>
+        <Res id="about" tr="About"/>
+        <Res id="aboutTitle" tr="Penalty Methods"/>
+        <Res id="aboutText" tr="Quadratic penalty and augmented Lagrangian methods for equality-constrained optimisation, with an analysis of Hessian conditioning. Numerical Optimisations, ETF Sarajevo. Davud Ćuprija, 20154."/>
+
+        <!-- setup panel -->
+        <Res id="secExperiment" tr="EXPERIMENT"/>
+        <Res id="secData" tr="CURVE-FIT DATA"/>
+        <Res id="alMu" tr="Penalty μ"/>
+        <Res id="resetDefaults" tr="Reset to defaults"/>
+        <Res id="tabMethods" tr="Methods"/>
+        <Res id="tabStopping" tr="Stopping"/>
+        <Res id="tabData" tr="Data"/>
+        <Res id="dataHint" tr="Used by the conic curve fit only."/>
+        <Res id="newSeed" tr="New"/>
+        <Res id="newSeedTT" tr="Draw a new random seed"/>
+        <Res id="resetDefaultsTT" tr="Restore every parameter to its default value"/>
+        <Res id="problemTT" tr="Test problem solved by both methods"/>
+        <Res id="dataPoints" tr="Data points"/>
+        <Res id="dataPointsTT" tr="Number of scattered points for the curve fit"/>
+        <Res id="noise" tr="Noise σ"/>
+        <Res id="noiseTT" tr="Standard deviation of the Gaussian noise added to the points"/>
+        <Res id="seed" tr="Seed"/>
+        <Res id="seedTT" tr="Seed of the data generator (same seed gives the same data on every platform)"/>
+        <Res id="secPenalty" tr="QUADRATIC PENALTY"/>
+        <Res id="mu0" tr="Initial μ₀"/>
+        <Res id="penMu0TT" tr="Penalty parameter of the first subproblem"/>
+        <Res id="growth" tr="Growth factor ρ"/>
+        <Res id="penGrowthTT" tr="μ is multiplied by ρ after every subproblem"/>
+        <Res id="muMax" tr="Maximum μ"/>
+        <Res id="penMuMaxTT" tr="The penalty method stops when μ would exceed this value"/>
+        <Res id="secAL" tr="AUGMENTED LAGRANGIAN"/>
+        <Res id="alMuTT" tr="Penalty parameter of the augmented Lagrangian (kept fixed unless adaptive)"/>
+        <Res id="alAdaptive" tr="Increase μ when ‖h‖ decreases too slowly"/>
+        <Res id="alAdaptiveTT" tr="Multiply μ by ρ when ‖h(x_k)‖ &gt; 0.25 ‖h(x_k-1)‖"/>
+        <Res id="alGrowthTT" tr="Growth factor used by the adaptive update"/>
+        <Res id="secStopping" tr="NEWTON &amp; STOPPING"/>
+        <Res id="feasTol" tr="Feasibility ‖h‖∞"/>
+        <Res id="feasTolTT" tr="Outer loop stops when the constraint violation is below this value (together with the optimality test)"/>
+        <Res id="optTol" tr="Optimality ‖∇L‖∞"/>
+        <Res id="optTolTT" tr="Outer loop stops when the Lagrangian gradient at the multiplier estimate is below this value"/>
+        <Res id="newtonTol" tr="Newton ‖∇φ‖∞"/>
+        <Res id="newtonTolTT" tr="Inner Newton solver stops when the merit gradient is below this value"/>
+        <Res id="maxOuter" tr="Max subproblems"/>
+        <Res id="maxOuterTT" tr="Maximum number of subproblems"/>
+        <Res id="maxNewton" tr="Max Newton steps"/>
+        <Res id="maxNewtonTT" tr="Maximum Newton iterations per subproblem"/>
+        <Res id="secAnalysis" tr="ANALYSIS"/>
+        <Res id="condNorm" tr="Condition number"/>
+        <Res id="condNormTT" tr="Norm used for cond(∇²φ) at every outer iterate"/>
+        <Res id="condInf" tr="∞-norm  ‖A‖‖A⁻¹‖"/>
+        <Res id="cond1" tr="1-norm  ‖A‖‖A⁻¹‖"/>
+        <Res id="cond2" tr="2-norm  (symmetric eigenvalues)"/>
+        <Res id="run" tr="Run comparison"/>
+        <Res id="runTT" tr="Solve the selected problem with both methods"/>
+        <Res id="stop" tr="Stop"/>
+        <Res id="stopTT" tr="Cancel the running solve"/>
+        <Res id="sweep" tr="Run all problems"/>
+        <Res id="sweepTT" tr="Solve every test problem and overlay the conditioning curves"/>
+        <Res id="live" tr="Re-run automatically on change"/>
+        <Res id="liveTT" tr="Parameter sensitivity: solve again whenever a value is edited"/>
+
+        <!-- status -->
+        <Res id="running" tr="Solving..."/>
+        <Res id="runningSweep" tr="Solving all problems..."/>
+        <Res id="stopping" tr="Stopping..."/>
+        <Res id="runFailed" tr="Run failed:"/>
+        <Res id="cancelledPrefix" tr="[cancelled] "/>
+
+        <!-- export -->
+        <Res id="exportTitle" tr="Export"/>
+        <Res id="exportNoResult" tr="Run a comparison first."/>
+        <Res id="exportRunning" tr="Exporting pages..."/>
+        <Res id="exportAllDone" tr="Exported everything"/>
+        <Res id="exportDataDone" tr="Data exported"/>
+        <Res id="exportFilesIn" tr="file(s) in"/>
+        <Res id="exportNotAPlot" tr="Open a chart page (Summary, Landscape, Convergence or Conditioning) to export it."/>
+        <Res id="exportDone" tr="Page exported"/>
+        <Res id="exportFailed" tr="The page could not be exported."/>
+        <Res id="pdfDocument" tr="PDF document"/>
+        <Res id="svgImage" tr="SVG image"/>
+
+        <!-- tabs and plots -->
+        <Res id="tabLandscape" tr="Landscape"/>
+        <Res id="tabConvergence" tr="Convergence"/>
+        <Res id="tabConditioning" tr="Conditioning"/>
+        <Res id="tabLog" tr="Iteration log"/>
+        <Res id="penalty" tr="Quadratic penalty"/>
+        <Res id="augLag" tr="Augmented Lagrangian"/>
+        <Res id="penaltyShort" tr="Penalty"/>
+        <Res id="augLagShort" tr="AL"/>
+        <Res id="penaltySolid" tr="penalty (solid, circles)"/>
+        <Res id="augLagDashed" tr="aug. Lagrangian (dashed, squares)"/>
+        <Res id="outerIteration" tr="outer iteration k"/>
+        <Res id="cumulativeNewton" tr="total Newton iterations"/>
+        <Res id="penaltyParameter" tr="penalty parameter"/>
+        <Res id="feasTolShort" tr="feasibility tolerance"/>
+        <Res id="newtonTolShort" tr="Newton tolerance"/>
+        <Res id="convViolationTitle" tr="Constraint violation:"/>
+        <Res id="convErrorTitle" tr="Distance to the solution vs work"/>
+        <Res id="convKktTitle" tr="Optimality vs work"/>
+        <Res id="condVsMuTitle" tr="Conditioning of the merit Hessian vs μ"/>
+        <Res id="condVsKTitle" tr="Conditioning per outer iteration"/>
+        <Res id="newtonItsTitle" tr="Newton iterations per subproblem"/>
+        <Res id="newtonIts" tr="iterations"/>
+        <Res id="newtonGradTitle" tr="Gradient norm reached by Newton"/>
+        <Res id="subproblemK" tr="Subproblem k:"/>
+        <Res id="subproblemKTT" tr="Outer iteration whose merit function is drawn"/>
+        <Res id="sliceX1" tr="x1  (slice through x*)"/>
+        <Res id="sliceX2" tr="x2"/>
+        <Res id="newtonPath" tr="Newton path"/>
+        <Res id="constraintCurve" tr="h(x) = 0"/>
+        <Res id="solutionMarker" tr="x*"/>
+        <Res id="fitTitle" tr="Conic fit"/>
+        <Res id="dataPointsLegend" tr="data"/>
+        <Res id="referenceFit" tr="reference (eigenvector)"/>
+        <Res id="violationStripTitle" tr="Constraint violation history (dotted line: selected k)"/>
+
+        <!-- tables -->
+        <Res id="summaryTitle" tr="Summary"/>
+        <Res id="detailTitle" tr="Outer iterations (selected problem)"/>
+        <Res id="colProblem" tr="Problem"/>
+        <Res id="colMethod" tr="Method"/>
+        <Res id="colStatus" tr="Status"/>
+        <Res id="colStatusTT" tr="Why the outer loop stopped"/>
+        <Res id="colOuter" tr="Outer"/>
+        <Res id="colOuterTT" tr="Number of subproblems solved"/>
+        <Res id="colNewton" tr="Newton"/>
+        <Res id="colNewtonTT" tr="Total Newton iterations"/>
+        <Res id="colNewtonItTT" tr="Newton iterations for this subproblem"/>
+        <Res id="colHInfTT" tr="Constraint violation at x_k"/>
+        <Res id="colXErrTT" tr="Distance to the reference solution"/>
+        <Res id="colFErrTT" tr="Objective error"/>
+        <Res id="colMaxCondTT" tr="Largest condition number of the merit Hessian"/>
+        <Res id="colLastCondTT" tr="Condition number at the final iterate"/>
+        <Res id="colMs" tr="ms"/>
+        <Res id="colMsTT" tr="Wall-clock time in milliseconds"/>
+        <Res id="colKTT" tr="Outer iteration"/>
+        <Res id="colMuTT" tr="Penalty parameter of the subproblem"/>
+        <Res id="colFTT" tr="Objective at x_k"/>
+        <Res id="colKktTT" tr="Lagrangian gradient at the multiplier estimate"/>
+        <Res id="colCondTT" tr="Condition number of the merit Hessian at x_k"/>
+        <Res id="colNewtonStatus" tr="Newton status"/>
+        <Res id="colNewtonStatusTT" tr="converged / stalled (rounding level reached) / max iterations"/>
+        <Res id="colNGradTT" tr="Merit gradient norm returned by Newton"/>
+        <Res id="colShift" tr="Shift τ"/>
+        <Res id="colShiftTT" tr="Largest Hessian modification H + τI needed for a descent direction"/>
+        <Res id="colLinRes" tr="Lin. residual"/>
+        <Res id="colLinResTT" tr="Largest relative residual of the Newton linear system"/>
+        <Res id="colLErrTT" tr="Multiplier error"/>
+    </Translations>
+</DevRes>

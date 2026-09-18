@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<DevRes regionals="Common/Regionals"
+        displayName="PenaltyMethods"
+        maintainer="Davud Cuprija"
+        email="kemalsivro@gmail.com"
+        homePage="https://github.com/"
+        majorVersion="1"
+        minorVersion="0"
+        versionDate="2026-09-16"
+        comment="Quadratic penalty and augmented Lagrangian methods with ill-conditioning analysis. Numerical Optimisations project, ETF Sarajevo.">
+	<Langs>
+		<Lang id="EN" name="English"/>
+	</Langs>
+	<ArtWork>
+		<Config path="Common/ResConfigs/natGUI.xml"/>
+		<Config path=":main.xml"/>
+	</ArtWork>
+	<Translation>
+		<Config path="Common/ResConfigs/tr/%s/natGUI.xml"/>
+		<Config path=":tr/%s/main.xml"/>
+	</Translation>
+</DevRes>
